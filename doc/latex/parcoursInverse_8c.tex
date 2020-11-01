@@ -1,0 +1,67 @@
+\hypertarget{parcoursInverse_8c}{}\section{src/parcours\+Inverse.c File Reference}
+\label{parcoursInverse_8c}\index{src/parcours\+Inverse.\+c@{src/parcours\+Inverse.\+c}}
+
+
+Création d\textquotesingle{}une liste chainée des instructions du patch.  
+
+
+{\ttfamily \#include \char`\"{}../include/parcours\+Inverse.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for parcours\+Inverse.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parcoursInverse_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct instruction $\ast$ \hyperlink{parcoursInverse_8c_a0a8ded8f236c70a62ebf1f0932d2d264}{court\+Chemin} (int depi, int depj, struct instruction $\ast$end, int n, int m, int $\ast$$\ast$matrix, char $\ast$$\ast$pA, char $\ast$$\ast$pB, int $\ast$lA, int $\ast$lB)
+\begin{DoxyCompactList}\small\item\em la fonction crée une liste chainée des instructions à faire à travers la matrice des coûts passée en paramètre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Création d\textquotesingle{}une liste chainée des instructions du patch. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{parcoursInverse_8c_a0a8ded8f236c70a62ebf1f0932d2d264}\label{parcoursInverse_8c_a0a8ded8f236c70a62ebf1f0932d2d264}} 
+\index{parcours\+Inverse.\+c@{parcours\+Inverse.\+c}!court\+Chemin@{court\+Chemin}}
+\index{court\+Chemin@{court\+Chemin}!parcours\+Inverse.\+c@{parcours\+Inverse.\+c}}
+\subsubsection{\texorpdfstring{court\+Chemin()}{courtChemin()}}
+{\footnotesize\ttfamily struct instruction $\ast$ court\+Chemin (\begin{DoxyParamCaption}\item[{int}]{depi,  }\item[{int}]{depj,  }\item[{struct instruction $\ast$}]{end,  }\item[{int}]{n,  }\item[{int}]{m,  }\item[{int $\ast$$\ast$}]{matrix,  }\item[{char $\ast$$\ast$}]{pA,  }\item[{char $\ast$$\ast$}]{pB,  }\item[{int $\ast$}]{lA,  }\item[{int $\ast$}]{lB }\end{DoxyParamCaption})}
+
+
+
+la fonction crée une liste chainée des instructions à faire à travers la matrice des coûts passée en paramètre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depi} & c\textquotesingle{}est le départ de ligne liée au fichier f1 \\
+\hline
+{\em depi} & c\textquotesingle{}est le départ de ligne liée au fichier f2 \\
+\hline
+{\em end} & c\textquotesingle{}est l\textquotesingle{}insruction donnée de la derniere opération du cour chemin \\
+\hline
+{\em n} & c\textquotesingle{}est la fin de ligne liée au fichier f1 \\
+\hline
+{\em m} & c\textquotesingle{}est la fin de ligne liée au fichier f2 \\
+\hline
+{\em pA} & pointeur sur les lignes du fichier f1 \\
+\hline
+{\em pB} & pointeur sur les lignes du fichier f2 \\
+\hline
+{\em lA} & tableau contenant les tailles du fichier f1 \\
+\hline
+{\em l\+B2} & tableau contenant les tailles du fichier f2 \\
+\hline
+\end{DoxyParams}
+si on finit les éléments du fichier target on détruit le reste du fichier source
+
+par contre si on finit les éléments du fichier source on ajoute le reste du fichier target
+
+par contre si on finit les éléments du fichier source on ajoute le reste du fichier target

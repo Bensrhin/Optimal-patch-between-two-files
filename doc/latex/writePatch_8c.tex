@@ -1,0 +1,53 @@
+\hypertarget{writePatch_8c}{}\section{src/write\+Patch.c File Reference}
+\label{writePatch_8c}\index{src/write\+Patch.\+c@{src/write\+Patch.\+c}}
+
+
+le fichier prend les arguments nécessaires pour écrire le patch  
+
+
+{\ttfamily \#include \char`\"{}../include/write\+Patch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for write\+Patch.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{writePatch_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{writePatch_8c_a136f3354672680ef82cbe8419df0863f}\label{writePatch_8c_a136f3354672680ef82cbe8419df0863f}} 
+void {\bfseries print\+\_\+string} (F\+I\+LE $\ast$file, char $\ast$s, int len)
+\item 
+void \hyperlink{writePatch_8c_ae4d0ae4520c23390909bd39be686d751}{write\+\_\+patch} (F\+I\+LE $\ast$file, struct instruction $\ast$instruction, int $\ast$tab1, int $\ast$tab2)
+\begin{DoxyCompactList}\small\item\em la fonction écrire l\textquotesingle{}instruction donnée en parametre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+le fichier prend les arguments nécessaires pour écrire le patch 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{writePatch_8c_ae4d0ae4520c23390909bd39be686d751}\label{writePatch_8c_ae4d0ae4520c23390909bd39be686d751}} 
+\index{write\+Patch.\+c@{write\+Patch.\+c}!write\+\_\+patch@{write\+\_\+patch}}
+\index{write\+\_\+patch@{write\+\_\+patch}!write\+Patch.\+c@{write\+Patch.\+c}}
+\subsubsection{\texorpdfstring{write\+\_\+patch()}{write\_patch()}}
+{\footnotesize\ttfamily void write\+\_\+patch (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file,  }\item[{struct instruction $\ast$}]{instruction,  }\item[{int $\ast$}]{tab1,  }\item[{int $\ast$}]{tab2 }\end{DoxyParamCaption})}
+
+
+
+la fonction écrire l\textquotesingle{}instruction donnée en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & le fichier surlequelle on écrit \\
+\hline
+{\em instruction} & c\textquotesingle{}est l\textquotesingle{}insruction donnée \\
+\hline
+{\em tab1} & tableau contenant les tailles du fichier f1 \\
+\hline
+{\em tab2} & tableau contenant les tailles du fichier f2 \\
+\hline
+\end{DoxyParams}

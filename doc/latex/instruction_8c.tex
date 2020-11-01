@@ -1,0 +1,79 @@
+\hypertarget{instruction_8c}{}\section{src/instruction.c File Reference}
+\label{instruction_8c}\index{src/instruction.\+c@{src/instruction.\+c}}
+
+
+le fichier contenant la structure sur laquelle on sauvegarde une instruction  
+
+
+{\ttfamily \#include \char`\"{}../include/instruction.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for instruction.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{instruction_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct instruction $\ast$ \hyperlink{instruction_8c_a86bf15e3b1449808698794dd91ead880}{get\+Head} (int seuil, int lignes, int colonnes, struct instruction $\ast$end, char $\ast$$\ast$source, char $\ast$$\ast$target, int $\ast$tab1, int $\ast$tab2)
+\begin{DoxyCompactList}\small\item\em la fonction renvoie un pointeur vers l\textquotesingle{}instruction finale pour la ligne (0,0) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{instruction_8c_a6c7c8ecbfe275db893726942290b4092}\label{instruction_8c_a6c7c8ecbfe275db893726942290b4092}} 
+void {\bfseries remplir} (struct instruction $\ast$current, struct instruction $\ast$next, int i, int j)
+\item 
+void \hyperlink{instruction_8c_adfa5a4bf8e6e014cc0d1412009960d71}{free\+\_\+instructions} (struct instruction $\ast$current)
+\begin{DoxyCompactList}\small\item\em libere la liste chainée des instructions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+le fichier contenant la structure sur laquelle on sauvegarde une instruction 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{instruction_8c_adfa5a4bf8e6e014cc0d1412009960d71}\label{instruction_8c_adfa5a4bf8e6e014cc0d1412009960d71}} 
+\index{instruction.\+c@{instruction.\+c}!free\+\_\+instructions@{free\+\_\+instructions}}
+\index{free\+\_\+instructions@{free\+\_\+instructions}!instruction.\+c@{instruction.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+instructions()}{free\_instructions()}}
+{\footnotesize\ttfamily void free\+\_\+instructions (\begin{DoxyParamCaption}\item[{struct instruction $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+libere la liste chainée des instructions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$current} & l\textquotesingle{}instruction courante \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{instruction_8c_a86bf15e3b1449808698794dd91ead880}\label{instruction_8c_a86bf15e3b1449808698794dd91ead880}} 
+\index{instruction.\+c@{instruction.\+c}!get\+Head@{get\+Head}}
+\index{get\+Head@{get\+Head}!instruction.\+c@{instruction.\+c}}
+\subsubsection{\texorpdfstring{get\+Head()}{getHead()}}
+{\footnotesize\ttfamily struct instruction $\ast$ get\+Head (\begin{DoxyParamCaption}\item[{int}]{seuil,  }\item[{int}]{lignes,  }\item[{int}]{colonnes,  }\item[{struct instruction $\ast$}]{end,  }\item[{char $\ast$$\ast$}]{source,  }\item[{char $\ast$$\ast$}]{target,  }\item[{int $\ast$}]{tab1,  }\item[{int $\ast$}]{tab2 }\end{DoxyParamCaption})}
+
+
+
+la fonction renvoie un pointeur vers l\textquotesingle{}instruction finale pour la ligne (0,0) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seuil} & la taille de ligne et colonne que la mémoire peut supporter \\
+\hline
+{\em lignes} & nombre de lignes du fichier f1 \\
+\hline
+{\em colonnes} & nombre de lignes du fichier f2 \\
+\hline
+{\em $\ast$end} & un pointeur vers une instruction \\
+\hline
+{\em sources} & pointeur sur les lignes du fichier f1 \\
+\hline
+{\em target} & pointeur sur les lignes du fichier f2 \\
+\hline
+{\em tab1} & tableau contenant les tailles du fichier f1 \\
+\hline
+{\em tab2} & tableau contenant les tailles du fichier f2 \\
+\hline
+\end{DoxyParams}
